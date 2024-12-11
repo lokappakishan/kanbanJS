@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #191414 0%, #000000 100%);
+    color: #ffffff;
+}
+
+.canvas {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    gap: 0.5em;
+}
+
+form input {
+    padding: 0.5em;
+    border: 1px solid #1DB954;
+    border-radius: 5px;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+button {
+    padding: 0.5em 0.75em;
+    border: none;
+    border-radius: 5px;
+    background-color: #1DB954;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1ed760;
+}
+
+.board-container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    gap: 1em;
+}
+
+.board {
+    padding: 1em;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    width: 25em;
+    background-color: #191414;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+}
+
+.board-header {
+    margin-bottom: 2em;
+    border-bottom: 2px solid #1DB954;
+    padding-bottom: 0.5em;
+}
+
+.board-header button {
+    margin-right: 0.5em;
+    background-color: #535353;
+    color: #ffffff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.board-header button:hover {
+    background-color: #1DB954;
+}
+
+.board h2 {
+    margin-bottom: 0.5em;
+    color: #1DB954;
+}
+
+.item {
+    border: 1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+    background-color: #282828;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.item:hover {
+    background-color: #333333;
+}
+
+.item .buttons button {
+    margin-left: 0.5em;
+    background-color: #535353;
+    color: #ffffff;
+    border: none;
+    border-radius: 3px;
+    padding: 0.25em 0.5em;
+    transition: background-color 0.3s ease;
+}
+
+.item .buttons button:hover {
+    background-color: #1DB954;
+}
